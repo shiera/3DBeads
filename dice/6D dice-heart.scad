@@ -1,13 +1,15 @@
-// The front side of the dice is the side whith 5 dots. 
-// All dot modules are done first on it and then translated 
-// and rotatated to their place
+
 
 // Lenght of the dice side. The dots will also scale if len is changed
-len=25;
+len=30;
 
+//size of the heart
 heartlen=len/5;
 
+//depht of the heart 
 heartT=heartlen;
+
+//---------------------------------------------------
 
 // Makes the dice
 dice(len);
@@ -37,6 +39,13 @@ module dot() {
     heart();
   }
 }
+
+//-----------------------------------------------------------------
+
+
+// The front side of the dice is the side whith 5 dots. 
+// All dot modules are done first on it and then translated 
+// and rotatated to their place
 
 
 // This module places the dots on the right places on the cube
@@ -141,6 +150,8 @@ module threeontop() {
   }
 }
 
+//----------------------------------------------------------------------------------
+
 
 //placing 2 halfheart beside each other making a whole heart
 module heart() {
@@ -168,7 +179,7 @@ module halfheart() {
 }
 
 
-
+//-------------------------------------------------------------
 
 // this is taken from https://github.com/elmom/MCAD/blob/master/boxes.scad
 // Library: boxes.scad

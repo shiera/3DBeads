@@ -32,7 +32,7 @@ module standstar() {
   }
 }
 
-
+//creates star shape
 module star() {
   linear_extrude(height = starT, center = true, convexity = 10, twist = 0) {
         polygon( points=[[0,starlen],[starlen*25/100,starlen*28/100],[starlen,starlen*28/100],[starlen*40/100,-starlen*14/100],[starlen*57/100,-starlen*85/100],[0,-starlen*43/100],[-starlen*57/100,-starlen*85/100],[-starlen*40/100,-starlen*14/100],[-starlen,starlen*28/100],[-starlen*25/100,starlen*28/100]] );

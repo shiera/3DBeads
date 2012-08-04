@@ -2,10 +2,16 @@
 
 //The lenght of the heart
 heartlen=20;
+
 //max thicknes of heart
 heartT=heartlen/2;
+
 //the radius of the hole
 hole=heartT/5;
+
+
+//----------------------------------------------------------------------------------------
+
 
 //making the heartbead
 heartbead();
@@ -40,7 +46,7 @@ module heart() {
 }
 
 
-// plasing the tickness module on both sides of the heart
+// placing the thickness module on both sides of the heart
 module Thick() {
   rotate(a=[180,270,90]) {
     thickness();

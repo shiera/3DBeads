@@ -1,20 +1,21 @@
-// The front side of the dice is the side whith 5 dots. 
-// All dot modules are done first on it and then translated 
-// and rotatated to their place
+
 
 // Lenght of the dice side. The dots will also scale if len is changed
-len=10;
-//rad of hole
+len=15;
+
+//radius of hole
 holerad=len/10;
 
-// Makes the dice
+//---------------------------------
 
+// Makes the dice
 difference() {
   dice(len);
   rotate(a=[42,39,100]) {
     cylinder(2*len, holerad, holerad, $fn=45 );
   }
 }
+
 
 // This module makes a cube whit the size len and then subtracts the
 // dots away from the cube
@@ -31,6 +32,7 @@ module dice(len=30) {
 }
 
 
+
 // This module makes the dot. The dot can be changed to something 
 // else if wanted. It will scale whith the dice as long as its 
 // size is derived from len
@@ -38,6 +40,12 @@ module dot() {
    sphere(len/10);
 }
 
+//---------------------------------------------------
+
+
+// The front side of the dice is the side whith 5 dots. 
+// All dot modules are done first on it and then translated 
+// and rotatated to their place
 
 
 // This module places the dots on the right places on the cube
@@ -141,6 +149,10 @@ module threeontop() {
     dot();   
   }
 }
+
+
+//-----------------------------------------------------------
+
 
 // this is taken from https://github.com/elmom/MCAD/blob/master/boxes.scad
 // Library: boxes.scad

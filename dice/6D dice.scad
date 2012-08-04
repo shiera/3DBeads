@@ -1,13 +1,19 @@
-// The front side of the dice is the side whith 5 dots. 
-// All dot modules are done first on it and then translated 
-// and rotatated to their place
+
+
+//---------------------------------------------------
 
 // Lenght of the dice side. The dots will also scale if len is changed
 len=30;
 
+//-----------------------------------------------------
+
+
 // Makes the dice
 dice(len);
 
+// The front side of the dice is the side whith 5 dots. 
+// All dot modules are done first on it and then translated 
+// and rotatated to their place
 
 
 // This module makes a cube whit the size len and then subtracts the
@@ -32,7 +38,7 @@ module dot() {
    sphere(len/10);
 }
 
-
+//------------------------------------------------
 
 // This module places the dots on the right places on the cube
 module dots(len) {
@@ -82,7 +88,7 @@ module dots(len) {
   }
 }
 
-
+//---------------------------------------
 
  
 
@@ -135,6 +141,9 @@ module threeontop() {
     dot();   
   }
 }
+
+
+//--------------------------------------------------
 
 // this is taken from https://github.com/elmom/MCAD/blob/master/boxes.scad
 // Library: boxes.scad

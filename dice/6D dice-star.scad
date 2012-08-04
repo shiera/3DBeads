@@ -1,11 +1,13 @@
-// The front side of the dice is the side whith 5 dots. 
-// All dot modules are done first on it and then translated 
-// and rotatated to their place
+
 
 // Lenght of the dice side. The dots will also scale if len is changed
-len=25;
+len=30;
+
 //size of star from mid to edge
 starlen=len/7;
+
+//-------------------------------------------------
+
 
 // Makes the dice
 dice(len);
@@ -25,6 +27,11 @@ module dice(len=30) {
     
   }
 }
+
+
+// The front side of the dice is the side whith 5 dots. 
+// All dot modules are done first on it and then translated 
+// and rotatated to their place
 
 
 // This module makes the dot. Here it have been changed to a star It will scale whith the dice as long as its 
